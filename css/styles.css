@@ -15,19 +15,21 @@ ul, ol {
 a {
     text-decoration: none;
 }
-section {
-
+.heder {
+    border-bottom: 1px solid #e7e9fc;  
 }
 .container {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    border-bottom: 1px solid #e7e9fc;
     display: flex;
         align-items: center;
         justify-content: space-around;
     }
-
+.heder-nav {
+display: flex;
+align-items: center;
+}
  .logo-text {
      font-family: "Raleway", sans-serif;
      font-weight: 700;
@@ -86,38 +88,42 @@ color: #404bbf;
 
 .hero {
 background-color: #2e2f42; 
-width: 1440px;
-    height: 600px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+width: ;
+    height: ;
+    padding: 188px 0 188px;
 }
 .hero-text {
     font-size: 56px;
- 
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.02em;
     line-height: 1.07;
     color: #fff;
     margin: 0 auto 48px auto;
+    max-width: 496px;
+    height: 120px;
 }
 .buttom {
 display: flex;
+align-items: flex-start;
+ justify-content: flex-start;
 flex-direction: row;
 gap: 10px;
-border-radius: 4px;
-    padding: 16px 32px;
 }
 .hero-text-button {
-        background: #4d5ae5;
+        background-color: #4d5ae5;
         color: #fff;
-        font-family: "Roboto", sans-serif;
         font-size: 16px;
         line-height: 1.5;
         font-weight: 500;
         letter-spacing: 0.04em;
         cursor: pointer;
-
+        border-radius: 4px;
+        display: block;
+            min-width: 169px;
+            height: 56px;
+            border: none;
+            text-align: center;
 }
 .hero-text-button:hover,
 .hero-text-button:focus
@@ -128,20 +134,34 @@ border-radius: 4px;
 padding-top: 120px;
   padding-bottom: 120px;
 }
+.priorities-list {
+    display: flex;
+    gap: 24;
+}
 
-.title-priorities {
+    .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            border: 0;
+            clip: rect(0 0 0 0);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
+    }
+
 .priorities-title {
 font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .priorities-text {
 font-weight: 400;
@@ -151,12 +171,18 @@ font-weight: 400;
     color: #434455;
 }
 .priorities {
-background-color: #ffffff;
+    background-color: #ffffff;
+    width: calc((100% - 72px) / 4);
 }
+
 .team {
 background-color: #f4f4fd;
 padding-top: 120px;
     padding-bottom: 120px;
+}
+.team-items {
+  display: flex; 
+gap: 24px;
 }
 .team-title {
 font-weight: 700;
@@ -166,16 +192,26 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2e2f42;
+margin-bottom: 72px;
 }
 .team-list {
 background-color: #FFFFFF;
+width: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;
 }
+.team-position {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
 .team-list-title {
 font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .team-list-text { 
     font-weight: 400;
@@ -183,6 +219,7 @@ font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        text-align: center;
 }
 .portfolio {
 background: #fff;
