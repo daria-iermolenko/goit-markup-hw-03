@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, p {
 ul, ol {
     list-style-type: none;
     margin: 0;
-    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
@@ -107,7 +107,6 @@ padding: 188px 0;
     margin: 0 auto;
     align-items: center;
     margin-bottom: 48px;
-display: flex;
 }
 .hero-text-button {
         background-color: #4d5ae5;
