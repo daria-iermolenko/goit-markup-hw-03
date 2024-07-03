@@ -15,8 +15,11 @@ ul, ol {
 a {
     text-decoration: none;
 }
-.heder {
-    border-bottom: 1px solid #e7e9fc;  
+img {
+    display: block;
+}
+.header {
+border-bottom: 1px solid #e7e9fc;
 }
 .container {
     width: 1158px;
@@ -28,10 +31,10 @@ a {
  display: flex;
 align-items: center;
 }
-.heder-nav {
+.header-nav {
 display: flex;
 align-items: center;
-padding: 24px outo;
+
 }
  .logo {
      font-family: "Raleway", sans-serif;
@@ -102,9 +105,9 @@ padding: 188px 0;
     color: #fff;
     max-width: 496px;
     margin: 0 auto;
-    display: block;
     align-items: center;
     margin-bottom: 48px;
+display: flex;
 }
 .hero-text-button {
         background-color: #4d5ae5;
@@ -137,21 +140,19 @@ padding-top: 120px;
     gap: 24px;
 }
 
-    .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            padding: 0;
-            overflow: hidden;
-            border: 0;
-            clip: rect(0 0 0 0);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+        .visually-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                border: 0;
+                padding: 0;
+                white-space: nowrap;
+                clip-path: inset(100%);
+                clip: rect(0 0 0 0);
+                overflow: hidden;
     }
+    
 
 .priorities-title {
 font-weight: 500;
@@ -218,6 +219,7 @@ font-weight: 500;
         letter-spacing: 0.02em;
         color: #434455;
         text-align: center;
+    
 }
 .portfolio {
 background: #fff;
@@ -244,8 +246,7 @@ row-gap: 48px;
 width: calc((100% - 48px) / 3);
 }
 .portfolio-container {
-    padding-top: 32px;
-    padding-bottom: 16px;
+padding: 32px 16px;
     gap: 8px;
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -257,6 +258,7 @@ font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .portfolio-list-text {
 font-weight: 400;
